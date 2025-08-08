@@ -4,7 +4,7 @@
     {
         public DateTime responseMintedTimestamp {  get; set; }
         public DateTime secondaryComponentsMintedTimestamp { get; set; }
-        public Dictionary<string, DictionaryComponentResponseOfint64AndDestinyCharacterComponent> characters { get; set; }
+        public DictionaryComponentResponseOfint64AndDestinyCharacterComponent characters { get; set; }
     }
 
     public class DictionaryComponentResponseOfint64AndDestinyCharacterComponent
