@@ -17,8 +17,9 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-dotnet@v4
-      - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
       - name: Publish NuGet package
         run: |
             VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
             dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$VERSION
+      - name: Publish NuGet package
+        run: dotnet nuget push ${{ env.NuGetDirectory }}/*.nupkg --api-key "${{ secrets.GITHUB_TOKEN }}" --source https://nuget.pkg.github.com/Caldera-Report/index.json --skip-duplicate
