@@ -19,4 +19,6 @@ jobs:
       - uses: actions/setup-dotnet@v4
       - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
       - name: Publish NuGet package
-        run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$(git describe --tags --abbrev=0)
+        run: |
+            VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
+            dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$VERSION
