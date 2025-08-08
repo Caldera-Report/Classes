@@ -17,7 +17,4 @@ jobs:
       - uses: actions/setup-dotnet@v4
       - run: dotnet pack --configuration Release --output ${{ env.NuGetDirectory }}
       - name: Publish NuGet package
-        run: |
-          foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
-              dotnet nuget push $file --api-key "${{ secrets.GITHUB_TOKEN }}" --source https://nuget.pkg.github.com/Caldera-Report/index.json --skip-duplicate
-          }
+        run: dotnet nuget push ${{ env.NuGetDirectory }}/*.nupkg --api-key "${{ secrets.GITHUB_TOKEN }}" --source https://nuget.pkg.github.com/Caldera-Report/index.json --skip-duplicate
