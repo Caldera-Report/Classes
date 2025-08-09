@@ -11,5 +11,8 @@
         public DateTime LastUpdateStarted { get; set; }
         public DateTime LastUpdateCompleted { get; set; }
         public string LastUpdateStatus { get; set; }
+
+        public ICollection<ActivityReport> ActivityReports { get; set; }
+        public ICollection<PlayerActivityRecord> PlayerActivityRecords { get; set; }
     }
 }

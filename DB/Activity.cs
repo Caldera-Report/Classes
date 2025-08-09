@@ -5,6 +5,10 @@
         public long Id { get; set; }
         public string Name { get; set; }
         public string PGCRImageURL { get; set; }
-        public long ActivityType { get; set; }
+        public long ActivityTypeId { get; set; }
+
+        public ICollection<ActivityReport> ActivityReports { get; set; }
+        public ICollection<PlayerActivityRecord> PlayerActivityRecords { get; set; }
+        public ActivityType ActivityType { get; set; }
     }
 }
