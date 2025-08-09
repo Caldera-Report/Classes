@@ -7,6 +7,7 @@
         public string DisplayName { get; set; }
         public int DisplayNameCode { get; set; }
         public DateTime LastPlayed { get; set; }
+        public long LastPlayedActivityInstanceId { get; set; }
         public DateTime LastUpdateStarted { get; set; }
         public DateTime LastUpdateCompleted { get; set; }
         public string LastUpdateStatus { get; set; }
