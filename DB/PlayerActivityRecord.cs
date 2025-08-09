@@ -1,4 +1,4 @@
-﻿public class PlayerActivityRecords
+﻿public class PlayerActivityRecord
 {
     public long Id { get; set; }
     public long PlayerId { get; set; }
