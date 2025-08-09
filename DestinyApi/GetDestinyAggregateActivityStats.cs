@@ -2,7 +2,7 @@
 {
     public class DestinyAggregateActivityResults
     {
-        public required List<DestinyAggregateActivityStats> activities { get; set; }
+        public List<DestinyAggregateActivityStats> activities { get; set; }
     }
 
     public class DestinyAggregateActivityStats
