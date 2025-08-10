@@ -17,7 +17,7 @@
         public List<DestinyActivityModifier> modifiers { get; set; }
         public bool isPlaylist { get; set; }
         public List<object> challenges { get; set; }
-        public List<string> optionalUnlockStrings { get; set; }
+        public List<Dictionary<string, string>> optionalUnlockStrings { get; set; }
         public bool inheritFromFreeRoam { get; set; }
         public List<uint> activityFamilyHashes { get; set; }
         public List<uint> traitHashes { get; set; }
