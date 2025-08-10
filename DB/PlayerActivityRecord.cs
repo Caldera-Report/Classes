@@ -7,7 +7,7 @@
         public long ActivityId { get; set; }
         public DateTime ActivityDate { get; set; }
         public string FastestCompletion { get; set; }
-        public long FastestCompletionActivityReportId { get; set; }
+        public long FastestCompletionActivityReportInstanceId { get; set; }
         public string TotalTimePlayed { get; set; }
         public string TotalGamesPlayed { get; set; }
 

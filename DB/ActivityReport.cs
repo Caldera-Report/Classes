@@ -3,6 +3,7 @@
     public class ActivityReport
     {
         public long Id { get; set; }
+        public long InstanceId { get; set; }
         public DateTime Date { get; set; }
         public long PlayerId { get; set; }
         public long ActivityId { get; set; }
