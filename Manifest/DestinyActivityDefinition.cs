@@ -2,74 +2,74 @@
 {
     public class DestinyActivityDefinition
     {
-        public DestinyDisplayPropertiesDefinition DisplayProperties { get; set; }
-        public DestinyDisplayPropertiesDefinition OriginalDisplayProperties { get; set; }
-        public string ReleaseIcon { get; set; }
-        public int ReleaseTime { get; set; }
-        public uint CompletionUnlockHash { get; set; }
-        public int ActivityLightLevel { get; set; }
-        public uint DestinationHash { get; set; }
-        public uint PlaceHash { get; set; }
-        public uint ActivityTypeHash { get; set; }
-        public int Tier { get; set; }
-        public string PgcrImage { get; set; }
-        public List<DestinyActivityReward> Rewards { get; set; }
-        public List<DestinyActivityModifier> Modifiers { get; set; }
-        public bool IsPlaylist { get; set; }
-        public List<object> Challenges { get; set; }
-        public List<string> OptionalUnlockStrings { get; set; }
-        public bool InheritFromFreeRoam { get; set; }
-        public List<uint> ActivityFamilyHashes { get; set; }
-        public List<uint> TraitHashes { get; set; }
-        public bool SuppressOtherRewards { get; set; }
-        public List<uint> SelectableSkullCollectionHashes { get; set; }
-        public List<object> PlaylistItems { get; set; }
-        public DestinyActivityMatchmaking Matchmaking { get; set; }
-        public uint? DirectActivityModeHash { get; set; }
-        public int? DirectActivityModeType { get; set; }
-        public List<uint> ActivityModeHashes { get; set; }
-        public List<int> ActivityModeTypes { get; set; }
-        public bool IsPvP { get; set; }
-        public List<object> InsertionPoints { get; set; }
-        public List<object> ActivityLocationMappings { get; set; }
-        public uint Hash { get; set; }
-        public int Index { get; set; }
-        public bool Redacted { get; set; }
-        public bool Blacklisted { get; set; }
+        public DestinyDisplayPropertiesDefinition displayProperties { get; set; }
+        public DestinyDisplayPropertiesDefinition originalDisplayProperties { get; set; }
+        public string releaseIcon { get; set; }
+        public int releaseTime { get; set; }
+        public uint completionUnlockHash { get; set; }
+        public int activityLightLevel { get; set; }
+        public uint destinationHash { get; set; }
+        public uint placeHash { get; set; }
+        public uint activityTypeHash { get; set; }
+        public int tier { get; set; }
+        public string pgcrImage { get; set; }
+        public List<DestinyActivityReward> rewards { get; set; }
+        public List<DestinyActivityModifier> modifiers { get; set; }
+        public bool isPlaylist { get; set; }
+        public List<object> challenges { get; set; }
+        public List<string> optionalUnlockStrings { get; set; }
+        public bool inheritFromFreeRoam { get; set; }
+        public List<uint> activityFamilyHashes { get; set; }
+        public List<uint> traitHashes { get; set; }
+        public bool suppressOtherRewards { get; set; }
+        public List<uint> selectableSkullCollectionHashes { get; set; }
+        public List<object> playlistItems { get; set; }
+        public DestinyActivityMatchmaking matchmaking { get; set; }
+        public uint? directActivityModeHash { get; set; }
+        public int? directActivityModeType { get; set; }
+        public List<uint> activityModeHashes { get; set; }
+        public List<int> activityModeTypes { get; set; }
+        public bool isPvP { get; set; }
+        public List<object> insertionPoints { get; set; }
+        public List<object> activityLocationMappings { get; set; }
+        public uint hash { get; set; }
+        public int index { get; set; }
+        public bool redacted { get; set; }
+        public bool blacklisted { get; set; }
     }
 
     public class DestinyDisplayPropertiesDefinition
     {
-        public string Description { get; set; }
-        public string Name { get; set; }
-        public string Icon { get; set; }
-        public bool HasIcon { get; set; }
+        public string description { get; set; }
+        public string name { get; set; }
+        public string icon { get; set; }
+        public bool hasIcon { get; set; }
     }
 
     public class DestinyActivityReward
     {
-        public string RewardText { get; set; }
-        public List<DestinyActivityRewardItem> RewardItems { get; set; }
+        public string rewardText { get; set; }
+        public List<DestinyActivityRewardItem> rewardItems { get; set; }
     }
 
     public class DestinyActivityRewardItem
     {
-        public uint ItemHash { get; set; }
-        public int Quantity { get; set; }
-        public bool HasConditionalVisibility { get; set; }
+        public uint itemHash { get; set; }
+        public int quantity { get; set; }
+        public bool hasConditionalVisibility { get; set; }
     }
 
     public class DestinyActivityModifier
     {
-        public uint ActivityModifierHash { get; set; }
+        public uint activityModifierHash { get; set; }
     }
 
     public class DestinyActivityMatchmaking
     {
-        public bool IsMatchmade { get; set; }
-        public int MinParty { get; set; }
-        public int MaxParty { get; set; }
-        public int MaxPlayers { get; set; }
-        public bool RequiresGuardianOath { get; set; }
+        public bool isMatchmade { get; set; }
+        public int minParty { get; set; }
+        public int maxParty { get; set; }
+        public int maxPlayers { get; set; }
+        public bool requiresGuardianOath { get; set; }
     }
 }
