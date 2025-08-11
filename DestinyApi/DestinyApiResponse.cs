@@ -2,7 +2,7 @@
 {
     public class DestinyApiResponse<T>
     {
-        public required T Response { get; set; }
+        public T Response { get; set; }
         public int ErrorCode { get; set; }
         public int ThrottleSeconds { get; set; }
         public required string ErrorStatus { get; set; }
