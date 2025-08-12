@@ -9,7 +9,7 @@
         public string FastestCompletion { get; set; }
         public long FastestCompletionActivityReportInstanceId { get; set; }
         public string TotalTimePlayed { get; set; }
-        public string TotalGamesPlayed { get; set; }
+        public int TotalGamesPlayed { get; set; }
 
         public Player Player { get; set; }
         public Activity Activity { get; set; }
