@@ -9,4 +9,13 @@
         public required string Message { get; set; }
         public required Dictionary<string, string> MessageData { get; set; }
     }
+
+    public class DestinyApiResponse
+    {
+        public int ErrorCode { get; set; }
+        public int ThrottleSeconds { get; set; }
+        public required string ErrorStatus { get; set; }
+        public required string Message { get; set; }
+        public required Dictionary<string, string> MessageData { get; set; }
+    }
 }
