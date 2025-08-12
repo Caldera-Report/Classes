@@ -7,7 +7,7 @@
         public long ActivityId { get; set; }
         public TimeSpan FastestCompletion { get; set; }
         public long FastestCompletionActivityReportInstanceId { get; set; }
-        public string TotalTimePlayed { get; set; }
+        public TimeSpan TotalTimePlayed { get; set; }
         public int TotalGamesPlayed { get; set; }
 
         public Player Player { get; set; }
