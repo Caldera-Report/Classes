@@ -13,5 +13,31 @@
         public Player Player { get; set; }
         public Activity Activity { get; set; }
         public ActivityReport FastestCompletionActivityReport { get; set; }
+
+        public static bool operator >(PlayerActivityRecord record1, PlayerActivityRecord record2)
+        {
+            if (record1.FastestCompletion < record2.FastestCompletion)
+                return true;
+            else
+            {
+                if (record1.TotalGamesPlayed > record2.TotalGamesPlayed)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
+        public static bool operator <(PlayerActivityRecord record1, PlayerActivityRecord record2)
+        {
+            if (record1.FastestCompletion > record2.FastestCompletion)
+                return true;
+            else
+            {
+                if (record1.TotalGamesPlayed < record2.TotalGamesPlayed)
+                    return true;
+                else
+                    return false;
+            }
+        }
     }
 }
