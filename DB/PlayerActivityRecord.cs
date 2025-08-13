@@ -6,7 +6,7 @@
         public long PlayerId { get; set; }
         public long ActivityId { get; set; }
         public TimeSpan FastestCompletion { get; set; }
-        public long FastestCompletionActivityReportInstanceId { get; set; }
+        public long FastestCompletionActivityReportId { get; set; }
         public TimeSpan TotalTimePlayed { get; set; }
         public int TotalGamesPlayed { get; set; }
 
