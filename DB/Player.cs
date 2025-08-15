@@ -10,6 +10,7 @@
         public long LastPlayedActivityInstanceId { get; set; }
         public DateTime LastUpdateStarted { get; set; }
         public DateTime LastUpdateCompleted { get; set; }
+        public DateTime NextUpdate { get; set; }
         public string LastUpdateStatus { get; set; }
 
         public ICollection<ActivityReport> ActivityReports { get; set; }
