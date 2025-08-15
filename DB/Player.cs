@@ -13,6 +13,5 @@
         public string LastUpdateStatus { get; set; }
 
         public ICollection<ActivityReport> ActivityReports { get; set; }
-        public ICollection<PlayerActivityRecord> PlayerActivityRecords { get; set; }
     }
 }
