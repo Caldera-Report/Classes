@@ -10,7 +10,7 @@
         public required Dictionary<string, string> MessageData { get; set; }
     }
 
-    public class DestinyApiResponse
+    public class DestinyApiResponseError
     {
         public int ErrorCode { get; set; }
         public int ThrottleSeconds { get; set; }
