@@ -4,6 +4,10 @@ namespace Classes.DestinyApi
 {
     public static class DestinyApiConstants
     {
+        public static List<int> NonRetryableBungieErrorCodes = new List<int>
+        {
+            1601, 1665
+        };
         public static List<uint> AllActivities = new List<uint>
         {
             2489241976, 3120544689, 1948474391, 528371307, 1037546335, 167985894, 2213088605, 1604785891
