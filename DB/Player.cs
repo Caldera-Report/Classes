@@ -14,5 +14,6 @@
         public string LastUpdateStatus { get; set; }
 
         public ICollection<ActivityReport> ActivityReports { get; set; }
+        public ActivityReport? LastActivityReport { get; set; }
     }
 }
