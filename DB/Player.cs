@@ -4,7 +4,7 @@
     {
         public long Id { get; set; }
         public int MembershipType { get; set; }
-        public string DisplayName { get; set; }
+        public required string DisplayName { get; set; }
         public int DisplayNameCode { get; set; }
         public DateTime? LastPlayed { get; set; }
         public long? LastPlayedActivityId { get; set; }
@@ -12,9 +12,9 @@
         public DateTime LastUpdateCompleted { get; set; }
         public DateTime? LastProfileView { get; set; }
         public int UpdatePriority { get; set; }
-        public string LastUpdateStatus { get; set; }
+        public string? LastUpdateStatus { get; set; }
 
-        public ICollection<ActivityReport> ActivityReports { get; set; }
+        public ICollection<ActivityReport>? ActivityReports { get; set; }
         public ActivityReport? LastActivityReport { get; set; }
     }
 }
