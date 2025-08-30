@@ -8,6 +8,7 @@
         public int DisplayNameCode { get; set; }
         public string FullDisplayName => $"{DisplayName}#{DisplayNameCode:D4}";
         public string LastUpdateStatus { get; set; }
+        public int UpdatePriority { get; set; }
         public DateTime? LastProfileView { get; set; }
     }
 }
