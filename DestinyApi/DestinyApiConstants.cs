@@ -24,6 +24,7 @@ namespace Classes.DestinyApi
 
         public const uint SoloOps = 3851289711;
         public const uint Strikes = 556925641;
+        public const uint Nightfall = 575572995;
         public const uint Crawl = 2442898492;
         public const uint Onslaught = 2897687202;
         public const uint ExoticMission = 1227821118;
@@ -40,7 +41,7 @@ namespace Classes.DestinyApi
 
         public static List<uint> PinnacleOperations = new List<uint>
         {
-            ExoticMission
+            Nightfall, ExoticMission
         };
 
         public static List<OpType> OperationTypes = new List<OpType>
