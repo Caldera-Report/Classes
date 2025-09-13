@@ -5,9 +5,9 @@
         public long Id { get; set; }
         public string Name { get; set; }
         public string ImageURL { get; set; }
-        public long ActivityTypeId { get; set; }
+        public int OpTypeId { get; set; }
 
         public ICollection<ActivityReport> ActivityReports { get; set; }
-        public ActivityType ActivityType { get; set; }
+        public OpType OpType { get; set; }
     }
 }
