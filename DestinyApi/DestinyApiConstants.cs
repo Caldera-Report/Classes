@@ -23,11 +23,7 @@ namespace Classes.DestinyApi
             2489241976, //Caldera
             3056702872, //Conflux
             3214228047, //Creation
-            4008836256, //Salt Mines
-            3816084061, //Quickplay: Normal
-            2700525707, //Quickplay: Advanced
-            2619873230, //Quickplay: Expert
-            4192328901 //Quickplay: Master
+            4008836256 //Salt Mines
         };
 
         public static List<uint> FireteamOperations = new List<uint>
@@ -60,10 +56,6 @@ namespace Classes.DestinyApi
             1459273759, //Contest of Elders
             732075595 , //Onslaught: Widow's Court
             849675207 , //Onslaught: Midtown
-            2582324487, //Quickplay: Normal
-            2866658313, //Quickplay: Advanced
-            2694614320, //Quickplay: Expert
-            3437865231 //Quickplay: Master
         };
 
         public static List<uint> PinnacleOperations = new List<uint>
