@@ -13,6 +13,7 @@
         public DateTime? LastProfileView { get; set; }
         public int UpdatePriority { get; set; }
         public string? LastUpdateStatus { get; set; }
+        public bool NeedsFullCheck { get; set; }
 
         public ICollection<ActivityReport>? ActivityReports { get; set; }
         public ActivityReport? LastActivityReport { get; set; }
