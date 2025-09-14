@@ -6,6 +6,8 @@
         public int MembershipType { get; set; }
         public required string DisplayName { get; set; }
         public int DisplayNameCode { get; set; }
+        public string? LastPlayedCharacterEmblemPath { get; set; }
+        public string? LastPlayedCharacterBackgroundPath { get; set; }
         public DateTime? LastPlayed { get; set; }
         public long? LastPlayedActivityId { get; set; }
         public DateTime? LastUpdateStarted { get; set; }
