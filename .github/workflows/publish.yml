@@ -20,6 +20,6 @@ jobs:
       - name: Publish NuGet package
         run: |
           VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
-          dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$VERSION
+            dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$VERSION /p:PackageId=CalderaReport.Classes
       - name: Publish NuGet package to NuGet.org
         run: dotnet nuget push ${{ env.NuGetDirectory }}/*.nupkg --api-key "${{ secrets.NUGET_API_KEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
