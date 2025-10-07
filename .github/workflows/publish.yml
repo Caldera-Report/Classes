@@ -1,5 +1,5 @@
 name: publish
-on:  
+on:
   push:
     branches:
       - master
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-dotnet@v4
       - name: Publish NuGet package
         run: |
-            VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
-            dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$VERSION
-      - name: Publish NuGet package
-        run: dotnet nuget push ${{ env.NuGetDirectory }}/*.nupkg --api-key "${{ secrets.GITHUB_TOKEN }}" --source https://nuget.pkg.github.com/Caldera-Report/index.json --skip-duplicate
+          VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:MinVerVersionOverride=$VERSION
+      - name: Publish NuGet package to NuGet.org
+        run: dotnet nuget push ${{ env.NuGetDirectory }}/*.nupkg --api-key "${{ secrets.NUGET_API_KEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
