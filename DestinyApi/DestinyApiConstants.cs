@@ -65,10 +65,10 @@ namespace Classes.DestinyApi
             3584571989, //Nightmare of Gahlran
             3996127757, //Hefund's Vengance
             1325548022, //Beneath the Necropolis
-            1478695866, //Onslaught: Widow's Court
-            2144591146, //Onslaught: Midtown
-            1534952762, //Contest of Elders
-            1018673832, //The Coil
+            218823224 , //The Coil
+            1459273759, //Contest of Elders
+            732075595 , //Onslaught: Widow's Court
+            849675207 , //Onslaught: Midtown
             4129522203  //Heliostat
         };
 
